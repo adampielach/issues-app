@@ -1,18 +1,24 @@
-// main
-$color__main--primary: #f6f6f6;
-$color__main--secondary: #fff;
+html, body {
+    height: 100vh;
+}
 
-// sidebar
-$color__sidebar--primary: #101022;
-$color__sidebar--secondary: #292a48;
+body {
+    min-height: 100vh;
+    background: url(../../img/background.jpg) no-repeat center;
+    @include font-size(15);
+    @include line-height();
+    font-family: $text__family-sans;
+}
 
-// fonts
-$color__font--main: #000;
-$color__font--sidebar: #fff;
-$color__font--accents: #8a8995;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-// text settings
-@font-face{font-family: 'Roboto Regular';src: url(../../fonts/Roboto-Regular.ttf) format('truetype')} 
-$text__family-sans: 'Roboto Regular', Helvetica, Arial, sans-serif !default;
-$text__base-size: 15px !default;
-$text__base-height: 20 !default;
+.app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: $text__base-size;
+}

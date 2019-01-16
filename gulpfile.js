@@ -34,8 +34,8 @@ var jsFront      = 'main.js';
 var jsFiles      = [ jsFront ];
 var jsURL        = './dist/js/';
 
-var imgSRC       = './src/images/**/*';
-var imgURL       = './dist/images/';
+var imgSRC       = './src/img/**/*';
+var imgURL       = './dist/img/';
 
 var fontsSRC     = './src/fonts/**/*';
 var fontsURL     = './dist/fonts/';
@@ -45,7 +45,7 @@ var htmlURL     = './dist/';
 
 var styleWatch   = './src/scss/**/*.scss';
 var jsWatch      = './src/js/**/*.js';
-var imgWatch     = './src/images/**/*.*';
+var imgWatch     = './src/img/**/*.*';
 var fontsWatch   = './src/fonts/**/*.*';
 var htmlWatch    = './src/**/*.html';
 
@@ -134,5 +134,5 @@ task("js", js);
 task("images", images);
 task("fonts", fonts);
 task("html", html);
-task("default", parallel(css, js, images, fonts, html));
+task("default", parallel(css, images, fonts, html));
 task("watch", parallel(browser_sync, watch_files));
