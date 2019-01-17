@@ -1,0 +1,19 @@
+.blur {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        @extend %background;
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        -webkit-filter: url('#blur');
+        filter: url('#blur');
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+        z-index: -1
+    }
+}

@@ -3,8 +3,8 @@ html, body {
 }
 
 body {
+    @extend %background;
     min-height: 100vh;
-    // background: url(../../img/background.jpg) no-repeat center;
     @include font-size(15);
     @include line-height();
     font-family: $text__family-sans;

@@ -1,0 +1,59 @@
+.sidebar {
+    width: 30%;
+    max-width: 150px;
+    flex-basis: 30%;
+    background: rgba($color__sidebar--primary, 0.9);
+    overflow: hidden;
+}
+
+.navbar__link {
+    display: inline-block;
+    color: $color__font--sidebar;
+    text-decoration: none;
+    width: 100%;
+    padding: 20px;
+    transition: ease-in 0.3s;
+    &:hover {
+        background: rgba($color__sidebar--secondary, 0.5);
+    }
+    &:focus {
+        background: $color__sidebar--secondary;
+    }
+    .item__icon {
+        position: relative;
+        padding-right: 5px;
+        top: 2px;
+    }
+}
+
+.navbar__issue-counter {
+    color: $color__font--accents;
+    float: right;
+}
+
+.navi-buttons {
+    background: $color__sidebar--primary;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    .navi-button {
+        flex-shrink: 0;
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background: black;
+    }
+    .navi-button--close {
+        background: red;
+    }
+    .navi-button--minimize {
+        background: yellow;
+    }
+    .navi-button--maximize {
+        background: green;
+    }
+}
