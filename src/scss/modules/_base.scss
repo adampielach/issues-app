@@ -4,21 +4,12 @@ html, body {
 
 body {
     min-height: 100vh;
-    background: url(../../img/background.jpg) no-repeat center;
+    // background: url(../../img/background.jpg) no-repeat center;
     @include font-size(15);
     @include line-height();
     font-family: $text__family-sans;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.app {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: $text__base-size;
+body * {
+    box-sizing: border-box;
 }
