@@ -11,7 +11,8 @@
 .app {
     display: flex;
     font-size: $text__base-size;
-    width: 100%;
+    width: 80%;
+    min-width: 430px;
     height: 50vh;
     border: 0 solid transparent;
     border-radius: 10px;
@@ -26,10 +27,11 @@
     flex: 1;
     background: $color__main--primary;
     overflow-y: auto;
+    padding: 10px 0;
 }
 
 .issue-cluster {
-    padding: 10px 15px;
+    padding: 0 15px;
 }
 
 .issue-cluster__date {
