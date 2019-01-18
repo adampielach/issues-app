@@ -25,6 +25,7 @@ input[type="checkbox"] ~ label:hover svg {
 input[type="checkbox"] ~ label svg {
     fill: $color__main--secondary;
     stroke: $color__main--accents;
+    cursor: pointer;
 }
 
 input[type="checkbox"]:checked ~ label svg {
