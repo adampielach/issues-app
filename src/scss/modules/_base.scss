@@ -13,3 +13,20 @@ body {
 body * {
     box-sizing: border-box;
 }
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] ~ label:hover svg {
+    fill: $color__font--accents;
+}
+
+input[type="checkbox"] ~ label svg {
+    fill: $color__main--secondary;
+    stroke: $color__main--accents;
+}
+
+input[type="checkbox"]:checked ~ label svg {
+    fill: $color__main--star;
+}

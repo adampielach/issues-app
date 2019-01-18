@@ -4,6 +4,7 @@
     flex-basis: 30%;
     background: rgba($color__sidebar--primary, 0.9);
     overflow: hidden;
+    font-size: $text__sidebar-size;
 }
 
 .navbar__link {
@@ -11,10 +12,10 @@
     color: $color__font--sidebar;
     text-decoration: none;
     width: 100%;
-    padding: 20px;
-    transition: ease-in 0.3s;
+    padding: 15px;
+    transition: ease-in 0.2s;
     &:hover {
-        background: rgba($color__sidebar--secondary, 0.5);
+        background: rgba($color__sidebar--secondary, 0.6);
     }
     &:focus {
         background: $color__sidebar--secondary;
@@ -36,8 +37,8 @@
     display: flex;
     align-items: center;
     height: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     overflow: hidden;
     .navi-button {
         flex-shrink: 0;
@@ -48,12 +49,12 @@
         background: black;
     }
     .navi-button--close {
-        background: red;
+        background: $color__navi-button--close;
     }
     .navi-button--minimize {
-        background: yellow;
+        background: $color__navi-button--minimize;
     }
     .navi-button--maximize {
-        background: green;
+        background: $color__navi-button--maximize;
     }
 }
