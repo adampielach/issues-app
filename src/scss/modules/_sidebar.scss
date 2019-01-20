@@ -24,12 +24,21 @@
         position: relative;
         padding-right: 5px;
         top: 2px;
+        width: 20px;
+        height: auto;
+        path {
+            fill: white;
+        }
     }
 }
 
 .navbar__issue-counter {
+    position: relative;
+    min-width: 20px;
+    right: -5px;
     color: $color__font--accents;
     float: right;
+    text-align: center;
 }
 
 .navi-buttons {
